@@ -191,3 +191,8 @@ function openGitHub() {
 function openLinkedIn() {
     window.open('https://linkedin.com/in/joaovictorsantos', '_blank');
 }
+
+// WhatsApp redirect
+function openWhatsApp() {
+    window.open('https://wa.me/5541992563339?text=Olá! Vi seu portfólio e gostaria de conversar.', '_blank');
+}
