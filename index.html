@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor dos Santos | Desenvolvedor Fullstack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    João Victor dos Santos
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition-colors duration-300">Início</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">Sobre</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors duration-300">Projetos</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contato</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-400 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800/95 backdrop-blur-md">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 hover:text-blue-400 transition-colors duration-300">Início</a>
+                <a href="#about" class="block py-2 hover:text-blue-400 transition-colors duration-300">Sobre</a>
+                <a href="#projects" class="block py-2 hover:text-blue-400 transition-colors duration-300">Projetos</a>
+                <a href="#contact" class="block py-2 hover:text-blue-400 transition-colors duration-300">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-20">
+        <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
+                João Victor dos Santos
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-8 animate-slide-up">
+                Desenvolvedor Iniciante
+            </p>
+            <p class="text-lg text-slate-400 mb-12 max-w-2xl mx-auto animate-slide-up">
+                Novo na area, mas buscando aprendizado e crescimento através de uma primeira experiência profissional.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://linkedin.com" target="_blank" 
+                   class="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+                    <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/jo-4o" target="_blank" 
+                   class="inline-flex items-center px-8 py-4 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-slate-500/25">
+                    <i data-lucide="github" class="w-5 h-5 mr-2"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" data-aos="fade-up">
+                Sobre Mim
+            </h2>
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="w-48 h-48 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
+                                <div class="w-44 h-44 rounded-full bg-gradient-to-r from-slate-600 to-slate-700 flex items-center justify-center">
+                                    <i data-lucide="user" class="w-20 h-20 text-slate-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 text-center md:text-left" data-aos="fade-left" data-aos-delay="600">
+                        <p class="text-lg text-slate-300 leading-relaxed">
+                            Sou um estudante de Analise e Desenvolvimento de Sistemas, apaixonado por tecnologia e programação. Estou em busca da minha primeira experiência profissional na área de desenvolvimento, onde posso aplicar meus conhecimentos e continuar aprendendo.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm border border-blue-600/30">Banco de Dados</span>
+                            <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm border border-green-600/30">Node.js</span>
+                            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm border border-yellow-600/30">Java</span>
+                            <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm border border-purple-600/30">Angular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" data-aos="fade-up">
+                Meus Projetos
+            </h2>
+            <div class="flex justify-center">
+                <!-- Single Project Card -->
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/10 max-w-md" data-aos="fade-up">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex flex-col items-center justify-center">
+                        <i data-lucide="github" class="w-16 h-16 text-white mb-3"></i>
+                        <span class="text-white text-xl font-semibold">jo-4o</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-3 text-white">Meus Projetos</h3>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            Aqui é onde ficam os meus projetos, avalie e dê uma estrela.
+                        </p>
+                        <a href="https://github.com/jo-4o" target="_blank" 
+                           class="inline-flex items-center px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+                            <i data-lucide="external-link" class="w-5 h-5 mr-2"></i>
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" data-aos="fade-up">
+                Vamos Trabalhar Juntos?
+            </h2>
+            <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Tem um projeto em mente? Estou sempre aberto para discutir novas oportunidades e colaborações.
+            </p>
+            
+            <div class="mb-12" data-aos="zoom-in" data-aos-delay="400">
+                <a href="mailto:joao@exemplo.com" 
+                   class="inline-flex items-center px-12 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 animate-glow">
+                    <i data-lucide="mail" class="w-6 h-6 mr-3"></i>
+                    Entre em Contato
+                </a>
+            </div>
+
+            <div class="flex justify-center space-x-8" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://linkedin.com" target="_blank" 
+                   class="w-12 h-12 bg-slate-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="https://github.com/jo-4o" target="_blank" 
+                   class="w-12 h-12 bg-slate-800 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:joao@exemplo.com" 
+                   class="w-12 h-12 bg-slate-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-slate-400">
+                © 2025 <span class="text-white font-semibold">João Victor dos Santos</span>. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
