@@ -11,8 +11,3 @@ Portfólio pessoal desenvolvido com HTML5, CSS3 e JavaScript.
 ## Sobre
 
 Site pessoal com informações profissionais, habilidades e projetos.
-
-## Contato
-
-- GitHub: [jo-4o](https://github.com/jo-4o)
-- Email: joaovictor@exemplo.com
